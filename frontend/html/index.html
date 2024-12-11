@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordSpinner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WordSpinner</h1>
+    </header>
+
+    <main class="container">
+        <div class="mode-selection">
+            <label>
+                <input type="radio" name="mode" value="encode" checked> 
+                เข้ารหัส
+            </label>
+            <label>
+                <input type="radio" name="mode" value="decode"> 
+                ถอดรหัส
+            </label>
+        </div>
+      
+        <textarea id="inputText" placeholder="กรอกข้อความที่นี่..."></textarea>
+        <textarea id="outputText" readonly placeholder="ผลลัพธ์จะแสดงที่นี่..."></textarea>
+
+        <div class="buttons">
+            <button id="copyButton">คัดลอกผลลัพธ์</button>
+            <button id="clearButton">ล้างข้อความ</button>
+        </div>
+        <div id="message"></div>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
